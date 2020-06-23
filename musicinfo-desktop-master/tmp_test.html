@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootswatch/dist/darkly/bootstrap.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+  />
+    <link href="style.css" rel="stylesheet" />
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <header class="masthead sticky-top">
+      <nav class="site-header sticky-top py-1">
+        <div
+          class="container d-flex flex-md-row justify-content-between nav-masthead"
+        >
+          <div class="col-4 d-flex justify-content-center text-center">
+            <a
+              class="py-2 d-inline-block nav-link"
+              href="#"
+              onclick="switchTab(this, 'lyricsSection')"
+              >Lyrics</a
+            >
+          </div>
+          <div class="col-4 d-flex justify-content-center text-center">
+            <a
+              class="py-2 d-inline-block nav-link active"
+              href="#"
+              onclick="switchTab(this, 'songSection')"
+              >Song</a
+            >
+          </div>
+          <div class="col-4 d-flex justify-content-center text-center">
+            <a
+              class="py-2 d-inline-block nav-link"
+              href="#"
+              onclick="switchTab(this, 'artistSection')"
+              >Artist</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="mainSection">
+      <div class="container py-3">
+        <div id="lyricsSection" style="display: none;"></div>
+
+        <!-- Song Section -->
+
+        <div id="songSection" style="display: none;">
+          <div class="jumbotron">
+            <div class="row">
+              <div class="col-6 text-center">
+                <img
+                  src="./tmp_folder/poker-face.jpg"
+                  class="rounded img-fluid"
+                />
+              </div>
+              <div class="col-6">
+                <h1 class="display-5">Poker Face</h1>
+                <p class="lead">A song single by Lady Gaga</p>
+                <hr class="my-4" />
+                <p>
+                  \"Poker Face\" is a song by American singer Lady Gaga from her
+                  debut studio album, The Fame (2008). Produced by RedOne, it
+                  was released as the album's second single in late 2008 for
+                  some markets and in early 2009 for the rest of the world.
+                  \"Poker Face\" is an uptempo synthpop song in the key of G♯
+                  minor, following in the footsteps of her previous single
+                  \"Just Dance\", but with a darker musical tone. The main idea
+                  behind the song is bisexuality and was a tribute by Gaga to
+                  her rock and roll boyfriends. Lyrically, the track is about a
+                  woman engaged in the practice of cockteasing.
+                </p>
+                <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="#" role="button"
+                    >Learn more</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4">
+              <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Run Time</div>
+                <div class="card-body">
+                  <h4 class="card-title text-center">3 min 12 sec</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Album</div>
+                <div class="card-body">
+                  <h4 class="card-title text-center">The Fame</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Release Date</div>
+                <div class="card-body">
+                  <h4 class="card-title text-center">05.10.2008</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 d-flex justify-content-center">
+              <div
+                class="card border-dark mb-3 justify-content-center align-self-center"
+                style="max-width: 30rem;"
+              >
+                <div class="card-header">Music recording certification</div>
+                <div class="card-body">
+                  <div class="row justify-content-center align-self-center">
+                    <div class="col-6">
+                      <img
+                        class="img-fluid"
+                        src="./images/platinum-award.png"
+                      />
+                    </div>
+                    <div
+                      class="col-6 text-center align-middle justify-content-center align-self-center"
+                    >
+                      <h5 class="card-title">Platinum</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4">
+              <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Music Authors</div>
+                <div class="card-body">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Cras justo odio
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Dapibus ac facilisis in
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Morbi leo risus
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card border-dark mb-3" style="max-width: 40rem;">
+                <div class="card-header">Lyrics Authors</div>
+                <div class="card-body">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Cras justo odio
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Dapibus ac facilisis in
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Morbi leo risus
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-2"></div>
+          </div>
+
+          <div class="row py-3">
+            <div class="col-12 d-flex justify-content-center">
+                <h3>Music Video</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div class="musicVideo">
+                  <!-- 16:9 aspect ratio -->
+                  <!-- <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/bESGLojNYSo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe> -->
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        
+
+        <!-- Artist Section -->
+
+        <div id="artistSection">
+            <div class="row my-5">
+              <div class="col-4"></div>
+                <div class="col-4">
+                  <!-- item -->
+                  <figure class="rounded caption-1">
+                    <img src="./images/lady-gaga.jpg" alt="" class="artistImg card-img-top border border-white border-md">
+                    <figcaption class="px-3 py-4 text-left text-light">
+                      <h2 class="h5 font-weight-bold mb-0">Lady Gaga</h2>
+                      <p class="text-small">American singer, songwriter, and actress</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="card border-dark mb-3">
+                  <div class="card-header">About the artist</div>
+                  <div class="card-body">
+                    <p class="card-text">Stefani Joanne Angelina Germanotta (/ˈstɛfəniː dʒɜːrməˈnɒtə/ STEF-ə-nee jur-mə-NOT-ə; born March 28, 1986), known professionally as Lady Gaga, is an American singer, songwriter, and actress. She performed initially in theater, appearing in high school plays, and studied at CAP21 through New York University's Tisch School of the Arts before dropping out to pursue a musical career. After leaving a rock band, participating in the Lower East Side's avant garde performance art circuit, and being dropped from a contract with Def Jam Recordings, Gaga worked as a songwriter for Sony/ATV Music Publishing. From there, recording artist Akon noticed her vocal abilities and helped her to sign a joint deal with Interscope Records and his own KonLive Distribution. Her debut album The Fame (2008) was a critical and commercial success that produced global chart-topping singles such as \"Just Dance\" and \"Poker Face\". A follow-up extended play (EP), The Fame Monster (2009), was met with a similar reception and \"Bad Romance\", \"Telephone\", and \"Alejandro\" were released becoming successful singles. Her second full-length album Born This Way was released in 2011, topping the charts in more than 20 countries, including the United States, where it sold over one million copies in its first week. The album produced the number-one single \"Born This Way\". Her third album Artpop, released in 2013, topped the US charts and included the successful single \"Applause\". In 2014, Gaga released a collaborative jazz album with Tony Bennett titled Cheek to Cheek, which became her third consecutive number one in the United States. For her work in the television series American Horror Story: Hotel, Gaga won a Golden Globe Award in 2016. With global album and single sales of 27 million and 146 million respectively, as of January 2016, she is one of the best-selling musicians of all time. Her achievements include twelve Guinness World Records, three Brit Awards, and six Grammy Awards. She is also the first artist to win the Songwriters Hall of Fame's Contemporary Icon Award. Other accolades include a Fashion Icon lifetime achievement award from the Council of Fashion Designers of America (2011), regular appearances on Billboard's Artists of the Year lists and Forbes's power and earnings rankings. In 2013, Gaga finished second on Time's readers' poll of the most influential people of the past ten years, while in 2015, she was named Billboard's Woman of the Year. She is known for her philanthropic work and social activism, including LGBT rights and her own non-profit organization, the Born This Way Foundation, which focuses on promoting youth empowerment and combating bullying.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+              <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Artist's Name(s)</div>
+                <div class="card-body">
+                <h4 class="card-title text-center">Lady Gaga</h4>
+                </div>
+              </div>
+              </div>
+              <div class="col-4">
+              <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Career Start</div>
+                <div class="card-body">
+                <h4 class="card-title text-center">2005</h4>
+                </div>
+              </div>
+              </div>
+              <div class="col-4">
+              <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Country</div>
+                <div class="card-body">
+                <h4 class="card-title text-center">USA</h4>
+                </div>
+              </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-2"></div>
+              <div class="col-4">
+              <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Genres</div>
+                <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                  Rock
+                  </li>
+                  <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                  Europop
+                  </li>
+                  <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                  Synth-pop
+                  </li>
+                  <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                  Electronic dance muusic
+                  </li>
+                  <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                  Country music
+                  </li>
+                </ul>
+                </div>
+              </div>
+              </div>
+              <div class="col-4">
+              <div class="card border-dark mb-3" style="max-width: 40rem;">
+                <div class="card-header">Record Labels</div>
+                <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                  Interscope Records
+                  </li>
+                  <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                  >
+                  Universal Music Group
+                  </li>
+                </ul>
+                </div>
+              </div>
+              </div>
+              <div class="col-2"></div>
+            </div>
+
+            <div class="row pt-4">
+              <div class="col-12"><h3 class="text-center">Albums</h3></div>
+              <div class="col-12">
+                <ul class="list-group list-group-horizontal justify-content-center align-items-center">
+                  <li class="list-group-item">The Fame</li>
+                  <li class="list-group-item">The Fame Monster</li>
+                  <li class="list-group-item">Born This Way</li>
+                  <li class="list-group-item">Artpop</li>
+                  <li class="list-group-item">A Star Is Born</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row pt-4">
+              <div class="col-12"><h3 class="text-center">Awards</h3></div>
+              <div class="col-1"></div>
+              <div class="col-10">
+                <table class="table table-striped table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col" style="width: 60%">Award Title</th>
+                      <th scope="col" style="width: 30%">For</th>
+                      <th scope="col" style="width: 10%">Year</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Academy Award for Best Original Song</td>
+                      <td>Shallow</td>
+                      <td>2019</td>
+                    </tr>
+                    <tr>
+                      <td>Grammy Award for Best Pop Solo Performance</td>
+                      <td>Joanne</td>
+                      <td>2019</td>
+                    </tr>
+                    <tr>
+                      <td>American Music Award for Favorite Pop/Rock Female Artist</td>
+                      <td></td>
+                      <td>2010</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-1"></div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 py-2"><h3 class="text-center">Social Links</h3></div>
+              <div class="col-12 justify-content-center align-items-center text-center">
+                <button type="button" class="btn btn-primary btn-lg m-1"><i class="fab fa-facebook-f pr-1"></i> Facebook</button>
+                <button type="button" class="btn btn-secondary btn-lg m-1"><i class="fas fa-music pr-1"></i> MusicBrainz</button>
+                <button type="button" class="btn bt-youtube btn-lg m-1 bt-hover"><i class="fab fa-youtube pr-1"></i> YouTube</button>
+                <button type="button" class="btn btn-success btn-lg m-1"><i class="fab fa-spotify pr-1"></i> Spotify</button>
+                <button type="button" class="btn btn-info btn-lg m-1"><i class="fab fa-twitter pr-1"></i> Twitter</button>
+                <button type="button" class="btn btn-warning btn-lg m-1"><i class="fab fa-google-play pr-1"></i> GooglePlay</button>
+                <button type="button" class="btn btn-danger btn-lg m-1"><i class="fab fa-soundcloud pr-1"></i> SoundCloud</button>
+                <button type="button" class="btn bt-itunes btn-lg m-1 bt-hover"><i class="fab fa-itunes pr-1"></i> iTunes</button>
+                <button type="button" class="btn btn-lg m-1 bt-instagram bt-hover"><i class="fab fa-instagram pr-1"></i> Instagram</button>
+              </div>
+              
+            </div>
+
+        </div>
+
+    <!-- End of Artist Section -->
+
+      </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      type="text/javascript"
+      src="node_modules/jquery/dist/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

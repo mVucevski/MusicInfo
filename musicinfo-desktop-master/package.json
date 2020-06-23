@@ -1,0 +1,23 @@
+{
+  "name": "electron_musicinfo",
+  "version": "1.0.0",
+  "description": "Desktop app for the MusicInfo project",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miroslav Vuchevski",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "bootswatch": "^4.5.0",
+    "jquery": "^3.5.1",
+    "tasklist": "^4.0.1"
+  }
+}

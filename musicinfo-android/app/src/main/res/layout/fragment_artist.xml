@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/card0"
+            layout="@layout/card_title_center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp" />
+
+        <include
+            android:id="@+id/card1"
+            layout="@layout/card_artist_image_title_subtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"
+            />
+
+        <include
+            android:id="@+id/card2"
+            layout="@layout/card_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/card3"
+            layout="@layout/card_title_title_inline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/card4"
+            layout="@layout/card_title_title_inline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/card4_country"
+            layout="@layout/card_title_title_inline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/card5"
+            layout="@layout/card_title_text_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/card6"
+            layout="@layout/card_title_text_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/card7"
+            layout="@layout/card_title_text_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/card8"
+            layout="@layout/expandable_card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/card9"
+            layout="@layout/card_title_social_links"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+</ScrollView>

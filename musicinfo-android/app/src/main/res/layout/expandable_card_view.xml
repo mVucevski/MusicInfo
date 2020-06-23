@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CardView.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp"
+    app:cardBackgroundColor="@color/colorBottomNavigationSelectedBackground"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAwardListTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.3"
+                android:layout_marginVertical="15dp"
+                android:text="@string/primary"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/colorPrimaryTextDefaultMaterialLight" />
+
+            <ImageView
+                android:id="@+id/ivArrowExpand"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_arrow_down"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.2"
+                />
+
+
+        </LinearLayout>
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="1000"
+            app:el_expanded="false"
+            app:el_parallax="0.5"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAwardList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
